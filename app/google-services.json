@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "841622386333",
+    "firebase_url": "https://jusjava-d0f20.firebaseio.com",
+    "project_id": "jusjava-d0f20",
+    "storage_bucket": "jusjava-d0f20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841622386333:android:f501ca736a064c863a4674",
+        "android_client_info": {
+          "package_name": "com.example.jusjavacoffee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841622386333-d2jjup9f3iu8s8vl42k755r72tggha88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8cykdqLR5IqGhBenkVOqpjYoOS0fHoKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841622386333-d2jjup9f3iu8s8vl42k755r72tggha88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
