@@ -11,6 +11,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".MainActivity">
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textCapWords"
+            android:paddingTop="20dp"
+            android:hint="Name"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,6 +32,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Whipped cream" />
+        <CheckBox
+            android:id="@+id/chocolate_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chocolate"
+            android:paddingTop="10dp"
+            android:textColor="#8B4513"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -49,8 +64,7 @@
                 android:text="-"
                 android:textAllCaps="true"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
-                />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/quantity_text_view"
