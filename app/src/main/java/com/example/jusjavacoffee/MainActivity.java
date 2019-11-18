@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
 //SUBMIT AFTER USER CLICKS SUBMIT BUTTON
 public void submitOrder(View view) {
         //Find the users's name
-        EditText nameField = (EditText) view.findViewById(R.id.name_field);
-        String name = nameField.getText().toString();
+//        EditText nameField = (EditText) view.findViewById(R.id.name_field);
+//        String name = nameField.getText().toString();
 
         // Figure out if the user wants whipped cream topping
         CheckBox whippedCreamCheckBox = (CheckBox) findViewById(R.id.whipped_cream_checkbox);
@@ -45,13 +45,11 @@ public void submitOrder(View view) {
     Intent intent = new Intent(Intent.ACTION_SENDTO);
     intent.setData(Uri.parse("mailto:"));
 
-    intent.putExtra(Intent.EXTRA_SUBJECT, "Just Java order for " + name);
+    intent.putExtra(Intent.EXTRA_SUBJECT, "Just Java order for " );
     intent.putExtra(Intent.EXTRA_TEXT, + price);
     if (intent.resolveActivity(getPackageManager()) != null) {
         startActivity(intent);
     }
-
-    displayMessage(message);
 
 }
 
@@ -88,8 +86,8 @@ public void submitOrder(View view) {
         priceMessage = priceMessage + "\nQuantity: " + quantity;
         priceMessage = priceMessage + "\nTotal :$" + price;
 
-        priceMessage = priceMessage + "\n Thank you customer, we value you";
-        displayMessage(priceMessage);
+        priceMessage = priceMessage + getString(R.string.thank_you);
+
 
         return priceMessage;
     }
@@ -112,14 +110,6 @@ public void decrement(View view) {
     quantity = quantity - 1;
     display(quantity);
 }
-    //DISPLAY MESSAGE METHOD
-    private void displayMessage(String message) {
-        TextView priceTextView = (TextView) findViewById(R.id.order_summery_text_view);
-        priceTextView.setText(message);
-    }
-
-
-
 
 }
 
